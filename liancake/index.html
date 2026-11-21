@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lian Cake Bakery — Artisanal Cakery &amp; Custom Cake Bontang</title>
+  <meta
+    name="description"
+    content="Lian Cake Bakery (@liandewia) — Katalog kue ulang tahun, custom cake, bento cake, bolu gulung, dan kue pernikahan di Bontang. Pesan mudah via WhatsApp, tersedia 2 cabang di Bontang."
+  />
+  <meta name="theme-color" content="#F4B6C2" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Ambient Background Blobs -->
+  <div class="ambient-bg" aria-hidden="true">
+    <span class="blob blob-1"></span>
+    <span class="blob blob-2"></span>
+    <span class="blob blob-3"></span>
+  </div>
+
+  <!-- Top Announcement Bar -->
+  <div class="top-bar">
+    <div class="container top-bar-inner">
+      <span>✨ Bontang's Artisanal Online &amp; Offline Cakery · <strong>2 Cabang di Bontang</strong></span>
+      <a href="#cabang" class="top-bar-link">Lihat Lokasi &amp; Jam Buka →</a>
+    </div>
+  </div>
+
+  <!-- Sticky Navigation Header -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a href="#beranda" class="brand" aria-label="Lian Cake Bakery Beranda">
+        <span class="brand-monogram" aria-hidden="true">LC</span>
+        <span class="brand-text">
+          <span class="brand-name">Lian Cake</span>
+          <span class="brand-sub">Bakery &amp; Patisserie · Bontang</span>
+        </span>
+      </a>
+
+      <nav class="nav-desktop" aria-label="Navigasi Utama">
+        <a href="#beranda" class="nav-link">Beranda</a>
+        <a href="#katalog" class="nav-link">Katalog Kue</a>
+        <a href="#cara-pesan" class="nav-link">Cara Pesan</a>
+        <a href="#cabang" class="nav-link">2 Cabang</a>
+        <a href="#ulasan" class="nav-link">Testimoni</a>
+      </nav>
+
+      <div class="header-actions">
+        <button type="button" class="btn btn-primary btn-sm" id="headerOrderBtn">
+          <span class="wa-dot" aria-hidden="true"></span>
+          Pesan via WA
+        </button>
+        <button
+          type="button"
+          class="menu-toggle"
+          id="menuToggle"
+          aria-label="Buka menu navigasi"
+          aria-expanded="false"
+          aria-controls="mobileDrawer"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div class="mobile-drawer" id="mobileDrawer" hidden>
+      <nav class="mobile-nav" aria-label="Navigasi Mobile">
+        <a href="#beranda" class="mobile-nav-link">Beranda</a>
+        <a href="#katalog" class="mobile-nav-link">Katalog Kue</a>
+        <a href="#cara-pesan" class="mobile-nav-link">Cara Pesan</a>
+        <a href="#cabang" class="mobile-nav-link">2 Cabang Bontang</a>
+        <a href="#ulasan" class="mobile-nav-link">Testimoni &amp; IG</a>
+        <button type="button" class="btn btn-primary btn-full mobile-wa-btn" id="mobileOrderBtn">
+          Chat &amp; Pesan via WhatsApp
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero" id="beranda">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="hero-pill">
+            <span class="pill-star">★ 4.7 – 5.0</span>
+            <span>Recommended Cake di Bontang</span>
+          </div>
+
+          <h1 class="hero-title">
+            Manisnya Momen Spesial, Dirangkai dengan <em>Cinta &amp; Estetika</em>
+          </h1>
+
+          <p class="hero-desc">
+            Selamat datang di <strong>Lian Cake Bakery</strong> (<code>@liandewia</code>). Kami menghadirkan
+            custom birthday cake, Korean bento cake, bolu gulung premium, hingga kue pernikahan elegan
+            yang dibuat fresh setiap hari di Bontang.
+          </p>
+
+          <div class="hero-cta">
+            <a href="#katalog" class="btn btn-primary btn-lg">
+              Jelajahi Katalog Kue
+            </a>
+            <button type="button" class="btn btn-outline btn-lg" id="heroCustomOrderBtn">
+              Request Custom Cake
+            </button>
+          </div>
+
+          <div class="hero-stats">
+            <div class="stat-item">
+              <strong class="stat-value">2 Cabang</strong>
+              <span class="stat-label">Simon Tampubolon &amp; Bakung PC 3</span>
+            </div>
+            <div class="stat-divider" aria-hidden="true"></div>
+            <div class="stat-item">
+              <strong class="stat-value">7.5K+</strong>
+              <span class="stat-label">Pengikut Instagram @liandewia</span>
+            </div>
+            <div class="stat-divider" aria-hidden="true"></div>
+            <div class="stat-item">
+              <strong class="stat-value">Fresh Daily</strong>
+              <span class="stat-label">Bawa Pulang &amp; Antar Aman</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-frame">
+            <img
+              src="assets/hero-cake.jpg"
+              alt="Signature Pastel Pink Birthday Cake dari Lian Cake Bakery Bontang"
+              class="hero-image"
+            />
+            <div class="floating-card floating-card-top">
+              <span class="fc-badge">Best Seller</span>
+              <div>
+                <strong>Signature Pastel Cake</strong>
+                <p>Custom desain sesuai impianmu</p>
+              </div>
+            </div>
+            <div class="floating-card floating-card-bottom">
+              <span class="fc-rating">★ 5.0</span>
+              <div>
+                <strong>Lian Cake · PC 3</strong>
+                <p>Buka hingga 20.00 WITA</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Brand Highlights Strip -->
+    <section class="highlights" aria-label="Keunggulan Lian Cake">
+      <div class="container highlights-grid">
+        <div class="highlight-card">
+          <div class="highlight-icon" aria-hidden="true">🍓</div>
+          <h3>Bahan Premium &amp; Fresh</h3>
+          <p>Menggunakan butter, cokelat Belgian, dan buah segar pilihan tanpa pengawet.</p>
+        </div>
+        <div class="highlight-card">
+          <div class="highlight-icon" aria-hidden="true">🎀</div>
+          <h3>Custom Desain Eksklusif</h3>
+          <p>Bebas pilih warna pastel, tema karakter, tulisan ucapan, hingga tingkat kue.</p>
+        </div>
+        <div class="highlight-card">
+          <div class="highlight-icon" aria-hidden="true">🛵</div>
+          <h3>Pick-up &amp; Antar Tanpa Bertemu</h3>
+          <p>Tersedia di 2 cabang Bontang dengan opsi bawa pulang maupun pengiriman aman.</p>
+        </div>
+        <div class="highlight-card">
+          <div class="highlight-icon" aria-hidden="true">💬</div>
+          <h3>Konsultasi Cepat via WA</h3>
+          <p>Kirim referensi kue impianmu langsung ke WhatsApp untuk estimasi harga instan.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cake Catalog Section -->
+    <section class="catalog-section" id="katalog">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Katalog Pilihan</span>
+          <h2 class="section-title">Koleksi Kue <em>Lian Cake</em></h2>
+          <p class="section-subtitle">
+            Pilih kue favoritmu lalu klik <strong>Pesan via WhatsApp</strong> untuk memilih ukuran, ucapan, dan cabang pengambilan.
+          </p>
+        </div>
+
+        <!-- Catalog Controls: Filter Tabs & Search -->
+        <div class="catalog-controls">
+          <div class="filter-tabs" role="tablist" aria-label="Kategori Kue">
+            <button type="button" class="filter-tab active" data-category="all" role="tab" aria-selected="true">
+              Semua Kue
+            </button>
+            <button type="button" class="filter-tab" data-category="birthday" role="tab" aria-selected="false">
+              Birthday &amp; Custom
+            </button>
+            <button type="button" class="filter-tab" data-category="bento" role="tab" aria-selected="false">
+              Korean Bento
+            </button>
+            <button type="button" class="filter-tab" data-category="roll" role="tab" aria-selected="false">
+              Bolu &amp; Roll Cake
+            </button>
+            <button type="button" class="filter-tab" data-category="tiered" role="tab" aria-selected="false">
+              Wedding &amp; Tiered
+            </button>
+          </div>
+
+          <div class="search-box">
+            <span class="search-icon" aria-hidden="true">🔍</span>
+            <input
+              type="search"
+              id="catalogSearch"
+              placeholder="Cari kue (strawberry, cokelat, bento)..."
+              aria-label="Cari kue di katalog"
+            />
+          </div>
+        </div>
+
+        <!-- Catalog Grid (Rendered by app.js) -->
+        <div class="catalog-grid" id="catalogGrid"></div>
+
+        <!-- Empty State -->
+        <div class="empty-state" id="catalogEmpty" hidden>
+          <p>Tidak ada kue yang cocok dengan pencarianmu. Yuk konsultasikan kue custom impianmu langsung!</p>
+          <button type="button" class="btn btn-primary" id="emptyCustomBtn">Tanya Custom Cake via WA</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Custom Order Banner -->
+    <section class="custom-banner">
+      <div class="container">
+        <div class="custom-banner-card">
+          <div class="custom-banner-text">
+            <span class="section-eyebrow">Punya Desain Sendiri?</span>
+            <h2>Wujudkan Kue Impianmu Bersama <em>Lian Dewi Angellia</em></h2>
+            <p>
+              Kirimkan foto referensi, tema warna, jumlah porsi, dan tanggal acaramu. Tim kami siap
+              membantu merancang kue terbaik untuk ulang tahun, anniversary, lamaran, hingga acara kantor di Bontang.
+            </p>
+            <div class="custom-banner-actions">
+              <button type="button" class="btn btn-primary btn-lg" id="bannerCustomBtn">
+                Konsultasi Custom Cake via WA
+              </button>
+              <a
+                href="https://www.instagram.com/liandewia/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-outline btn-lg"
+              >
+                Lihat Portofolio @liandewia
+              </a>
+            </div>
+          </div>
+          <div class="custom-banner-visual">
+            <img src="assets/cake-tiered.jpg" alt="Contoh Custom Tiered Cake Lian Cake" loading="lazy" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How to Order Section -->
+    <section class="steps-section" id="cara-pesan">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Praktis &amp; Cepat</span>
+          <h2 class="section-title">Cara Pemesanan via <em>WhatsApp</em></h2>
+          <p class="section-subtitle">
+            Hanya dalam beberapa langkah mudah, kue spesialmu siap diproses oleh tim Lian Cake Bakery.
+          </p>
+        </div>
+
+        <div class="steps-grid">
+          <div class="step-card">
+            <span class="step-num">01</span>
+            <h3>Pilih Model Kue</h3>
+            <p>Pilih dari katalog atau siapkan foto referensi desain kue yang kamu inginkan.</p>
+          </div>
+          <div class="step-card">
+            <span class="step-num">02</span>
+            <h3>Atur Detail &amp; Ucapan</h3>
+            <p>Tentukan ukuran, varian rasa, tanggal acara, serta tulisan ucapan di atas kue.</p>
+          </div>
+          <div class="step-card">
+            <span class="step-num">03</span>
+            <h3>Pilih Cabang Bontang</h3>
+            <p>Pilih ambil langsung di Jl. Simon Tampubolon No.103, Jl. Bakung PC 3 No.94, atau diantar.</p>
+          </div>
+          <div class="step-card">
+            <span class="step-num">04</span>
+            <h3>Konfirmasi WhatsApp</h3>
+            <p>Format pesanan otomatis terisi saat kamu klik tombol WhatsApp—tinggal kirim!</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Two Branches Section (Exact Google Maps Data) -->
+    <section class="branches-section" id="cabang">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Lokasi Resmi Google Maps</span>
+          <h2 class="section-title">2 Cabang <em>Lian Cake</em> di Bontang</h2>
+          <p class="section-subtitle">
+            Kunjungi outlet terdekat kami atau pilih cabang saat melakukan pemesanan melalui WhatsApp.
+          </p>
+        </div>
+
+        <div class="branches-grid">
+          <!-- Branch 1 -->
+          <article class="branch-card">
+            <div class="branch-top">
+              <span class="branch-badge">Cabang 01 · Outlet Utama</span>
+              <span class="branch-rating">★ 4.7 <span>(28 ulasan)</span></span>
+            </div>
+            <h3 class="branch-name">Lian Cake — Simon Tampubolon</h3>
+            <p class="branch-quote">“Recomended cake di Bontang.”</p>
+
+            <ul class="branch-details">
+              <li>
+                <span class="detail-icon" aria-hidden="true">📍</span>
+                <div>
+                  <strong>Alamat</strong>
+                  <span>Jl. Simon Tampubolon No.103, Bontang, Kalimantan Timur</span>
+                </div>
+              </li>
+              <li>
+                <span class="detail-icon" aria-hidden="true">🕒</span>
+                <div>
+                  <strong>Jam Operasional</strong>
+                  <span>Buka setiap hari · Tutup pukul 19.00 WITA</span>
+                </div>
+              </li>
+              <li>
+                <span class="detail-icon" aria-hidden="true">🏪</span>
+                <div>
+                  <strong>Kategori</strong>
+                  <span>Bakery &amp; Restoran Kue</span>
+                </div>
+              </li>
+            </ul>
+
+            <div class="branch-actions">
+              <a
+                href="https://www.google.com/maps/search/?api=1&query=Lian+Cake+Jl.+Simon+Tampubolon+No.103+Bontang"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-outline"
+              >
+                Buka Google Maps
+              </a>
+              <button
+                type="button"
+                class="btn btn-primary branch-wa-btn"
+                data-branch="Cabang Jl. Simon Tampubolon No.103"
+              >
+                Order di Cabang Ini
+              </button>
+            </div>
+          </article>
+
+          <!-- Branch 2 -->
+          <article class="branch-card branch-card-featured">
+            <div class="branch-top">
+              <span class="branch-badge">Cabang 02 · PC 3 Bakung</span>
+              <span class="branch-rating">★ 5.0 <span>(7 ulasan)</span></span>
+            </div>
+            <h3 class="branch-name">Lian Cake — Bakung PC 3</h3>
+            <p class="branch-quote">Layanan ramah dengan rating sempurna ★ 5.0 di Google Maps.</p>
+
+            <ul class="branch-details">
+              <li>
+                <span class="detail-icon" aria-hidden="true">📍</span>
+                <div>
+                  <strong>Alamat</strong>
+                  <span>Jl. Bakung, PC 3 No.94, Bontang, Kalimantan Timur</span>
+                </div>
+              </li>
+              <li>
+                <span class="detail-icon" aria-hidden="true">🕒</span>
+                <div>
+                  <strong>Jam Operasional</strong>
+                  <span>Buka setiap hari · Tutup pukul 20.00 WITA</span>
+                </div>
+              </li>
+              <li>
+                <span class="detail-icon" aria-hidden="true">🛍️</span>
+                <div>
+                  <strong>Opsi Layanan</strong>
+                  <span>Bawa pulang · Antar tanpa bertemu</span>
+                </div>
+              </li>
+            </ul>
+
+            <div class="branch-actions">
+              <a
+                href="https://www.google.com/maps/search/?api=1&query=Lian+Cake+Jl.+Bakung+PC+3+No.94+Bontang"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-outline"
+              >
+                Buka Google Maps
+              </a>
+              <button
+                type="button"
+                class="btn btn-primary branch-wa-btn"
+                data-branch="Cabang Jl. Bakung, PC 3 No.94"
+              >
+                Order di Cabang Ini
+              </button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials & Instagram Section -->
+    <section class="social-section" id="ulasan">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Dipercaya Pelanggan Bontang</span>
+          <h2 class="section-title">Kata Mereka Tentang <em>Lian Cake</em></h2>
+        </div>
+
+        <div class="testimonials-grid">
+          <blockquote class="testimonial-card">
+            <div class="stars" aria-label="5 dari 5 bintang">★★★★★</div>
+            <p>“Recomended cake di Bontang. Kuenya lembut, krimnya tidak bikin eneg, dan desain pastelnya cantik banget!”</p>
+            <footer>— Ulasan Google Maps · Cabang Simon Tampubolon</footer>
+          </blockquote>
+
+          <blockquote class="testimonial-card">
+            <div class="stars" aria-label="5 dari 5 bintang">★★★★★</div>
+            <p>“Pesan Korean bento cake mendadak lewat WhatsApp tetap dilayani dengan ramah. Hasilnya persis sama referensi!”</p>
+            <footer>— Pelanggan Setia @liandewia · Bontang</footer>
+          </blockquote>
+
+          <blockquote class="testimonial-card">
+            <div class="stars" aria-label="5 dari 5 bintang">★★★★★</div>
+            <p>“Suka banget sama layanan antar tanpa bertemunya di cabang Bakung PC 3. Aman, rapi, dan tepat waktu.”</p>
+            <footer>— Ulasan Pelanggan · Cabang Bakung PC 3</footer>
+          </blockquote>
+        </div>
+
+        <!-- Instagram CTA Box -->
+        <div class="ig-box">
+          <div class="ig-info">
+            <span class="ig-handle">@liandewia</span>
+            <h3>Ikuti Keseruan Dapur &amp; Katalog Terbaru Kami di Instagram</h3>
+            <p>696+ postingan inspirasi kue, video dekorasi, dan promo spesial untuk warga Bontang.</p>
+          </div>
+          <div class="ig-actions">
+            <a
+              href="https://www.instagram.com/liandewia/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-primary"
+            >
+              Follow @liandewia
+            </a>
+            <a
+              href="https://wa.me/6282254446773"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-outline"
+            >
+              WA: 0822-5444-6773
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <div class="brand">
+          <span class="brand-monogram" aria-hidden="true">LC</span>
+          <span class="brand-text">
+            <span class="brand-name">Lian Cake Bakery</span>
+            <span class="brand-sub">by Lian Dewi Angellia (@liandewia)</span>
+          </span>
+        </div>
+        <p>
+          Bontang Indonesia based online &amp; offline cakery. Menyajikan kue ulang tahun, custom cake,
+          dan patisserie segar dengan sentuhan estetika pink pastel.
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Menu Cepat</h4>
+        <ul>
+          <li><a href="#beranda">Beranda</a></li>
+          <li><a href="#katalog">Katalog Kue</a></li>
+          <li><a href="#cara-pesan">Cara Pemesanan</a></li>
+          <li><a href="#cabang">Lokasi 2 Cabang</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Cabang Bontang</h4>
+        <ul>
+          <li>Jl. Simon Tampubolon No.103 (Tutup 19.00)</li>
+          <li>Jl. Bakung, PC 3 No.94 (Tutup 20.00)</li>
+          <li>WhatsApp: <a href="https://wa.me/6282254446773" target="_blank" rel="noopener noreferrer">+62 822-5444-6773</a></li>
+          <li>Instagram: <a href="https://www.instagram.com/liandewia/" target="_blank" rel="noopener noreferrer">@liandewia</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>&copy; <span id="currentYear">2026</span> Lian Cake Bakery Bontang. All rights reserved.</p>
+      <p>Dibuat dengan penuh cinta untuk setiap perayaan manis di Bontang.</p>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Quick Button -->
+  <button type="button" class="floating-wa" id="floatingWaBtn" aria-label="Pesan cepat via WhatsApp">
+    <span class="floating-wa-icon" aria-hidden="true">💬</span>
+    <span class="floating-wa-text">Pesan via WA</span>
+  </button>
+
+  <!-- Interactive WhatsApp Order Modal -->
+  <div class="modal-backdrop" id="orderModal" hidden role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-card">
+      <button type="button" class="modal-close" id="modalCloseBtn" aria-label="Tutup form pemesanan">&times;</button>
+
+      <div class="modal-header">
+        <span class="section-eyebrow">Form Pesanan WhatsApp</span>
+        <h3 id="modalTitle">Pesan Kue Lian Cake</h3>
+        <p id="modalSubtitle">Lengkapi detail di bawah agar admin kami bisa langsung memproses pesananmu.</p>
+      </div>
+
+      <form id="waOrderForm" class="modal-form">
+        <div class="form-group">
+          <label for="orderCakeName">Pilihan Kue / Produk</label>
+          <input type="text" id="orderCakeName" name="cakeName" required />
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="orderSize">Ukuran / Varian</label>
+            <select id="orderSize" name="size">
+              <option value="Mini / Bento (10cm)">Mini / Bento (10cm)</option>
+              <option value="Reguler (16cm)">Reguler (16cm)</option>
+              <option value="Medium (20cm)" selected>Medium (20cm)</option>
+              <option value="Large (24cm)">Large (24cm)</option>
+              <option value="2 Tingkat / Custom">2 Tingkat / Custom</option>
+              <option value="1 Box / Paket Standar">1 Box / Paket Standar</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="orderDate">Tanggal Acara / Ambil</label>
+            <input type="date" id="orderDate" name="date" />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="orderBranch">Pilih Cabang / Pengambilan</label>
+          <select id="orderBranch" name="branch">
+            <option value="Cabang Jl. Simon Tampubolon No.103">Ambil di Cabang Jl. Simon Tampubolon No.103</option>
+            <option value="Cabang Jl. Bakung, PC 3 No.94">Ambil di Cabang Jl. Bakung, PC 3 No.94</option>
+            <option value="Antar ke Alamat (Delivery Bontang)">Antar ke Alamat (Delivery Bontang)</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="orderCustomerName">Nama Pemesan</label>
+          <input type="text" id="orderCustomerName" name="customerName" placeholder="Contoh: Rina" required />
+        </div>
+
+        <div class="form-group">
+          <label for="orderGreeting">Tulisan Ucapan di Kue &amp; Catatan (Opsional)</label>
+          <textarea
+            id="orderGreeting"
+            name="greeting"
+            rows="3"
+            placeholder="Contoh: Happy Birthday Mama! Warna pink pastel, rasa cokelat."
+          ></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-lg btn-full">
+          Kirim Pesanan ke WhatsApp →
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
