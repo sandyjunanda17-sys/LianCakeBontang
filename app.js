@@ -13,7 +13,7 @@ const CAKE_CATALOG = [
     badge: "Best Seller",
     price: "Mulai Rp 225.000",
     defaultSize: "Medium (20cm)",
-    image: "assets/hero-cake.jpg",
+    image: "hero-cake.jpg",
     description:
       "Sponge cake lembut berlapis krim vanilla-strawberry dengan dekorasi buttercream pink pastel, macaron, dan stroberi segar.",
   },
@@ -25,7 +25,7 @@ const CAKE_CATALOG = [
     badge: "Favorit Pelanggan",
     price: "Mulai Rp 195.000",
     defaultSize: "Reguler (16cm)",
-    image: "assets/cake-strawberry.jpg",
+    image: "cake-strawberry.jpg",
     description:
       "Perpaduan sponge lembut, whipped cream ringan yang tidak bikin eneg, dan potongan buah stroberi segar.",
   },
@@ -37,7 +37,7 @@ const CAKE_CATALOG = [
     badge: "Rich Chocolate",
     price: "Mulai Rp 215.000",
     defaultSize: "Medium (20cm)",
-    image: "assets/cake-chocolate.jpg",
+    image: "cake-chocolate.jpg",
     description:
       "Kue cokelat premium dengan siraman ganache cokelat mengilap, macaron, dan buah beri segar untuk pencinta cokelat.",
   },
@@ -49,7 +49,7 @@ const CAKE_CATALOG = [
     badge: "Cute & Praktis",
     price: "Mulai Rp 85.000",
     defaultSize: "Mini / Bento (10cm)",
-    image: "assets/cake-bento.jpg",
+    image: "cake-bento.jpg",
     description:
       "Kue mini estetik dalam kotak bento lengkap dengan lilin & garpu kayu. Bisa request tulisan singkat dan warna pastel.",
   },
@@ -61,7 +61,7 @@ const CAKE_CATALOG = [
     badge: "Fresh Daily",
     price: "Mulai Rp 95.000",
     defaultSize: "1 Box / Paket Standar",
-    image: "assets/cake-roll.jpg",
+    image: "cake-roll.jpg",
     description:
       "Bolu gulung super lembut dengan isian krim vanila-stroberi yang creamy dan manis pas, cocok untuk hantaran atau teman ngopi.",
   },
@@ -73,7 +73,7 @@ const CAKE_CATALOG = [
     badge: "Luxury Custom",
     price: "Mulai Rp 650.000",
     defaultSize: "2 Tingkat / Custom",
-    image: "assets/cake-tiered.jpg",
+    image: "cake-tiered.jpg",
     description:
       "Kue 2 tingkat elegan bernuansa pink pastel dengan detail mutiara buttercream dan bunga segar untuk lamaran, nikahan, atau sweet 17th.",
   },
